@@ -13,6 +13,7 @@ header .container {
 }
 
 header nav {
+    display: none;
     width: 100%;
     background-color: rgb(40, 40, 148);
 }
@@ -142,7 +143,31 @@ footer {
     display: inline-block;
 }
 
-@media screen and (min-width:768px) {
-    
-}
+/*========== tablet ==========*/
+@media screen and (min-width:768px) { 
+    header nav {
+        display: block;
+    }
 
+    #trigger {
+        display: none;
+    }
+
+    /* gnb */
+    .gnb {
+        flex-direction: row;
+    }
+    
+    .gnb > li {
+        width: 25%;
+    }
+    
+    .gnb > li > a {
+        border-right: 1px solid rgba(255,255,255,0.5);
+        border-top: 0;
+    }
+
+    .gnb > li:last-child > a {
+        border-right: 0;
+    }
+} 
