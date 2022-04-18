@@ -38,7 +38,7 @@ header nav {
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
-    background-color: rgb(50, 50, 87);
+    background-color: rgb(40, 40, 148);
 }
 
 #trigger > a {
@@ -222,5 +222,48 @@ footer {
 
     .footer-flex-box > address {
         width: 80%;
+    }
+}
+
+/*========== pc ==========*/
+@media screen and (min-width:1024px) { 
+    /* header */
+    .gnb > li > a{
+        padding: 20px;
+    }
+
+    /* main */
+    section > h2 {
+        margin-top: 20px;
+        margin-bottom: 80px;
+        font-size: 26px;
+    }
+
+    .coding-flex-box > div:first-child {
+        width: 55%;
+    }
+
+    .coding-flex-box > div:last-child {
+        width: 25%;
+        text-align: center;
+    }
+
+    .coding-flex-box > div:first-child > p {
+        font-size: 18px;
+    }
+
+    .coding-flex-box .coding-img > img {
+        width: 80%;
+    }
+
+    /* saying */
+    .saying  p {
+        margin: 30px 20%;
+        font-size: 18px;
+    }
+
+    .saying strong {
+        margin-bottom: 30px;
+        font-size: 16px;
     }
 }
